@@ -89,17 +89,6 @@ CREATE TABLE `news` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-DROP TABLE IF EXISTS `ga_players`;
-CREATE TABLE `ga_players` (
-  `id` int(255) NOT NULL AUTO_INCREMENT,
-  `username` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-  `passwd` text COLLATE utf8_unicode_ci NOT NULL,
-  `ga_token` text COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
-INSERT INTO `ga_players` (`id`, `username`, `passwd`, `ga_token`) VALUES
-(1, 'playertest',  '6d2aff483952d904179ca0c8c536a2c7', '');
 
 DROP TABLE IF EXISTS `players`;
 CREATE TABLE `players` (
